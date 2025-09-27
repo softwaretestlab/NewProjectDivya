@@ -42,13 +42,9 @@ test("Navigate through all Sauce Labs menu items and go back", async ({ page }) 
             console.log("Successfully logged out");
             return; // Stop execution after logout
          }
-
-
          // Wait for navigation, then go back
         await page.goBack();              // Navigate back to the previous page
         console.log(`Navigated back from ${item.name}`);
-
-
     }
 
 
