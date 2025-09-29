@@ -22,7 +22,8 @@ test('Dropdown Select Test', async ({ page }) => {
     // Select the option "Name (A to Z)"
     await dropdown.selectOption({ label: 'Name (A to Z)' });
 
-    // Verify the selected option
+    // Verify the selected option 
+    // if attribute is like value="az" , here "value" is represented as inputValue in playwright
     const selectedOption = await dropdown.inputValue();
     expect(selectedOption).toBe('az');
 

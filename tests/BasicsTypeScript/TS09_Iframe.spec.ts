@@ -4,6 +4,7 @@ test('has title', async ({ page }) => {
 await page.goto('https://stl-automationtesting.blogspot.com/p/iframetesting.html');
 await page.locator('iframe').contentFrame().getByRole('textbox', { name: 'Enter Username' }).click();
 await page.locator('iframe').contentFrame().getByRole('textbox', { name: 'Enter Username' }).fill('abc');
+await page.getByRole('textbox', { name: 'Search this blog' }).fill('test');
 });
 
 // test('has title', async ({ page }) => {
