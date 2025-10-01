@@ -28,9 +28,9 @@ export class LoginPage {
 
   async getPageTitle(): Promise<string> {
     const text = await this.title.textContent();
-    if (!text) throw new Error('Title element has no text content');
+    if (!text) throw new Error('Title element has no text content'); //is to safeguard against null, because the textContent() method can potentially return null.
     console.log(`Page title: ${text}`);
-    return text;  //Products
+    return text;  //Products 
 
   }
 
