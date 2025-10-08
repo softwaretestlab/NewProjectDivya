@@ -2,7 +2,8 @@ import { test, expect } from '@playwright/test';
 
 test.describe('Admin Tests', () => {
 // this is the only test we will be able to run
-test.only('Test A', async ({ page }) => {
+// test.only('Test A', async ({ page }) => {
+  test('Test A', async ({ page }) => {
   await page.goto('https://echoecho.com/htmlforms09.htm');
   });
 

@@ -1,0 +1,29 @@
+
+
+#
+# Fatal error in , line 0
+# Fatal process out of memory: Zone
+#
+#
+#
+#FailureMessage Object: 000000C74FBF5B60
+----- Native stack trace -----
+
+ 1: 00007FF771B7C4CB node::SetCppgcReference+17979
+ 2: 00007FF771A6A97F node::TriggerNodeReport+72127
+ 3: 00007FF772966692 V8_Fatal+162
+ 4: 00007FF77254D9C3 v8::Function::Experimental_IsNopFunction+835
+ 5: 00007FF772030C64 v8::SnapshotCreator::GetIsolate+53284
+ 6: 00007FF772A7C932 inflateInit2_+1051602
+ 7: 00007FF772A7E2C7 inflateInit2_+1058151
+ 8: 00007FF772A2690F inflateInit2_+699311
+ 9: 00007FF772A32DE1 inflateInit2_+749697
+10: 00007FF772A2D26F inflateInit2_+726287
+11: 00007FF772A281FA inflateInit2_+705690
+12: 00007FF7724BC1D1 v8::SharedValueConveyor::SharedValueConveyor+29329
+13: 00007FF7724890F1 v8::ModuleRequest::GetImportAssertions+45521
+14: 00007FF771A6D45D X509_STORE_get_cleanup+829
+15: 00007FF771BCFBDD uv_poll_stop+237
+16: 00007FF772D89CC0 inflateValidate+153984
+17: 00007FFB1B67E8D7 BaseThreadInitThunk+23
+18: 00007FFB1C008D9C RtlUserThreadStart+44

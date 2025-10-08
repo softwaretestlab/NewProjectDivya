@@ -1,0 +1,1 @@
+Test "click on radio button with value "Milk"" finished

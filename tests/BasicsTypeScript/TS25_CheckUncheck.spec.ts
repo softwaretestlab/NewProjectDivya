@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 // All elements have same attirbues how to handle?
+test.describe('SauceDemo Test', () => {
 test('Scroll to last product on SauceDemo', async ({ page }) => {
   // Login first
   await page.goto('https://echoecho.com/htmlforms09.htm');
@@ -33,4 +34,5 @@ test('Scroll to last product on SauceDemo', async ({ page }) => {
     await expect(checkbox).not.toBeChecked();
   }
 }
+});
 });

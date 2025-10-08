@@ -1,0 +1,3 @@
+Before all tests
+ Test has started
+ Test has ended

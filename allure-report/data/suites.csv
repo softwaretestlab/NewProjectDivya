@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1881","Login test for user: problem_user","","Wed Oct 08 18:39:24 AEDT 2025","passed","Wed Oct 08 18:39:26 AEDT 2025","DDT Login Tests - SauceDemo","BasicsTypeScript\DDT03_Excellogin.spec.ts","",""
+"","2611","Login test for user: locked_out_user","","Wed Oct 08 18:39:21 AEDT 2025","passed","Wed Oct 08 18:39:24 AEDT 2025","DDT Login Tests - SauceDemo","BasicsTypeScript\DDT03_Excellogin.spec.ts","",""
+"","4450","Login test for user: standard_user","","Wed Oct 08 18:39:16 AEDT 2025","passed","Wed Oct 08 18:39:20 AEDT 2025","DDT Login Tests - SauceDemo","BasicsTypeScript\DDT03_Excellogin.spec.ts","",""

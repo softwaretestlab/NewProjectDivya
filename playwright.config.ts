@@ -11,7 +11,8 @@ console.log(`PASSWORD: ${process.env.PASSWORD}`);
 
 export default defineConfig({
   testDir: './tests',
- 
+  retries: 2, //Retry failed tests up to 2 times
+  workers: 4, // Run tests in a single worker
   use: {
     baseURL: process.env.BASE_URL,  // Should correctly load BASE_URL from .env
     browserName: 'chromium', // Change to firefox or webkit if needed
@@ -21,12 +22,11 @@ export default defineConfig({
     trace: 'on',
     viewport: { width: 1280, height: 720 } 
   },
-  workers: 4, // Run tests in a single worker
-  reporter: [['html', { outputFolder: 'reports' }]],
-  // reporter: [
-  //   ['list'],  // Default CLI output
-  //   ['allure-playwright'],  // Enable Allure reporting
-  // ],
+   reporter: [['html', { outputFolder: 'reports' }],
+
+    ['list'],  // Default CLI output
+    ['allure-playwright'],  // Enable Allure reporting
+ ],
 
   timeout: 90000,
   });
